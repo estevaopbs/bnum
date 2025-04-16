@@ -285,7 +285,7 @@ macro_rules! endian {
                 Self::from_le_bytes(bytes)
             }
 
-            pub(crate) const BYTES_USIZE: usize = N * digit::$Digit::BYTES as usize;
+            pub const BYTES_USIZE: usize = N * digit::$Digit::BYTES as usize;
         }
     };
 }
